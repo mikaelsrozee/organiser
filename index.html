@@ -12,6 +12,37 @@
     </header>
     <main>
         <button class="new" type="button" name="new-organiser" aria-label="click to create new organiser"><span>+</span></button>
+
+        <template id="tasktable">
+            <table id="organiser">
+                <thead>
+                <tr>
+                    <td><h2>Task Name</h2></td>
+                    <td><h2>Task Deadline</h2></td>
+                    <td><h2>Complete?</h2></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                </tr>
+                </tbody>
+            </table>
+        </template>
+
+        <template id="taskrow">
+            <td>
+                <input name="taskN name" type="text" placeholder="Enter task name..." id="taskNname">
+                <label class="hidden" for="taskNname">TaskN name</label>
+            </td>
+            <td>
+                <input name="taskN deadline" type="date" id="taskNdeadline">
+                <label class="hidden" for="taskNdeadline">TaskN deadline</label>
+            </td>
+            <td>
+                <input name="taskN complete" type="checkbox" id="taskNcheckbox">
+                <label class="hidden" for="taskNcheckbox">TaskN complete?</label>
+            </td>
+        </template>
     </main>
     <footer>
         <p>Created by Mikael Rozee &copy 2019</p>
