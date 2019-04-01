@@ -11,10 +11,10 @@
         <h1>Organiser</h1>
     </header>
     <main>
-        <button class="new" type="button" name="new-organiser" aria-label="click to create new organiser"><span>+</span></button>
+        <button id="newTableButton" class="new" type="button" name="new-organiser" aria-label="click to create new organiser"><span>+</span></button>
 
         <template id="tasktable">
-            <table id="organiser">
+            <table id="organiserN">
                 <thead>
                 <tr>
                     <td><h2>Task Name</h2></td>
@@ -24,6 +24,7 @@
                 </thead>
                 <tbody>
                 <tr>
+                    <td id="newTaskButton" colspan="3">Click to add new task</td>
                 </tr>
                 </tbody>
             </table>
@@ -43,6 +44,8 @@
                 <label class="hidden" for="taskNcheckbox">TaskN complete?</label>
             </td>
         </template>
+
+        <script src="scripts/createNewTable.js"></script>
     </main>
     <footer>
         <p>Created by Mikael Rozee &copy 2019</p>
