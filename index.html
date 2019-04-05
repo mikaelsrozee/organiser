@@ -23,26 +23,29 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
+                <tr id="newTaskRow">
                     <td id="newTaskButton" colspan="3">Click to add new task</td>
                 </tr>
                 </tbody>
             </table>
+            <script src="scripts/createNewTask.js"></script>
         </template>
 
         <template id="taskrow">
-            <td>
-                <input name="taskN name" type="text" placeholder="Enter task name..." id="taskNname">
-                <label class="hidden" for="taskNname">TaskN name</label>
-            </td>
-            <td>
-                <input name="taskN deadline" type="date" id="taskNdeadline">
-                <label class="hidden" for="taskNdeadline">TaskN deadline</label>
-            </td>
-            <td>
-                <input name="taskN complete" type="checkbox" id="taskNcheckbox">
-                <label class="hidden" for="taskNcheckbox">TaskN complete?</label>
-            </td>
+            <tr>
+                <td>
+                    <input name="taskN name" type="text" placeholder="Enter task name..." id="taskNname">
+                    <label class="hidden" for="taskNname">TaskN name</label>
+                </td>
+                <td>
+                    <input name="taskN deadline" type="date" id="taskNdeadline">
+                    <label class="hidden" for="taskNdeadline">TaskN deadline</label>
+                </td>
+                <td>
+                    <input name="taskN complete" type="checkbox" id="taskNcheckbox">
+                    <label class="hidden" for="taskNcheckbox">TaskN complete?</label>
+                </td>
+            </tr>
         </template>
 
         <script src="scripts/createNewTable.js"></script>
